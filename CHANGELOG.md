@@ -1,5 +1,31 @@
 # Changelog
 
+## [4.6.0](https://github.com/shaka-project/shaka-player/compare/v4.5.0...v4.6.0) (2023-10-12)
+
+
+### Features
+
+* **net:** Add shaka.net.NetworkingUtils ([#5756](https://github.com/shaka-project/shaka-player/issues/5756)) ([be96fd0](https://github.com/shaka-project/shaka-player/commit/be96fd0a2b0092efaecd1a09699ce78785266f52))
+* Stop setting playbackRate to 0 to control buffering state ([#5696](https://github.com/shaka-project/shaka-player/issues/5696)) ([6156dce](https://github.com/shaka-project/shaka-player/commit/6156dced6bddc5e2cd0cc52071295cff63cadfcd))
+* **UI:** Display frame rates in the quality selector ([#5753](https://github.com/shaka-project/shaka-player/issues/5753)) ([3096378](https://github.com/shaka-project/shaka-player/commit/30963788be1d1840f9d8671cf8e91cbeaa721f10))
+* Use ManagedMediaSource when available ([#5683](https://github.com/shaka-project/shaka-player/issues/5683)) ([01da5fa](https://github.com/shaka-project/shaka-player/commit/01da5fa8a4b32c14582bd3cb865b5d5eca591d7f))
+
+
+### Bug Fixes
+
+* **DASH:** Fix manifest update time for Live manifests ([#5763](https://github.com/shaka-project/shaka-player/issues/5763)) ([65449d1](https://github.com/shaka-project/shaka-player/commit/65449d1a1c43c2f0741a3e8eed620fb5a374da84))
+* **DASH:** Fix manifest update time for LL-DASH ([#5736](https://github.com/shaka-project/shaka-player/issues/5736)) ([8b7141f](https://github.com/shaka-project/shaka-player/commit/8b7141f92342044c8515679f6532efe635e205dc))
+* Dispatch streamDataCallback correctly in SegmentPrefetchOperation ([#5764](https://github.com/shaka-project/shaka-player/issues/5764)) ([bab8153](https://github.com/shaka-project/shaka-player/commit/bab81537626a0662ee291e4f5bccf488fd2c1870))
+* For text content is not necessary codec switching ([#5731](https://github.com/shaka-project/shaka-player/issues/5731)) ([bdbaae5](https://github.com/shaka-project/shaka-player/commit/bdbaae5182c1f4f650822edb2a95246a918ad5df))
+* **HLS:** Fix init segment when EXT-X-MAP is preceded by EXT-X-BYTERANGE ([#5732](https://github.com/shaka-project/shaka-player/issues/5732)) ([24e5de3](https://github.com/shaka-project/shaka-player/commit/24e5de34ba2bd8a1e03204a1e8b96436c6aed296))
+* **HLS:** Fix url management in HLS ([#5722](https://github.com/shaka-project/shaka-player/issues/5722)) ([8deab71](https://github.com/shaka-project/shaka-player/commit/8deab717f358502b9c79a0fbd504531cc3173ddd))
+* **UI:** Fix text selector when the trackLabelFormat is set to LABEL ([#5751](https://github.com/shaka-project/shaka-player/issues/5751)) ([bba0651](https://github.com/shaka-project/shaka-player/commit/bba0651e23bdebc5ba12dc17f7d6d2a33c0bb51a))
+
+
+### Performance Improvements
+
+* **HLS:** Improve detection of all partial segments ([#5761](https://github.com/shaka-project/shaka-player/issues/5761)) ([2a35579](https://github.com/shaka-project/shaka-player/commit/2a3557915f05f72cb44406eb1497a386c8fecbab))
+
 ## [4.5.0](https://github.com/shaka-project/shaka-player/compare/v4.4.0...v4.5.0) (2023-10-04)
 
 
