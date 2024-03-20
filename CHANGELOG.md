@@ -1,5 +1,48 @@
 # Changelog
 
+## [4.7.11](https://github.com/shaka-project/shaka-player/compare/v4.7.10...v4.7.11) (2024-02-26)
+
+
+### Bug Fixes
+
+* **Cast:** Force TS content to be transmuxed on Chromecast ([#6262](https://github.com/shaka-project/shaka-player/issues/6262)) ([7db39a1](https://github.com/shaka-project/shaka-player/commit/7db39a10f0aa9d86530193f26658ac1139ea9372)), closes [#5278](https://github.com/shaka-project/shaka-player/issues/5278)
+* **HLS:** Ban unsupported combinations of SAMPLE-AES encryption ([#6295](https://github.com/shaka-project/shaka-player/issues/6295)) ([bc6dbf5](https://github.com/shaka-project/shaka-player/commit/bc6dbf558800264ede7f650c7b6838cd45e659a1))
+* **HLS:** Fix bad init segment request with byterange when using media playlist ([#6297](https://github.com/shaka-project/shaka-player/issues/6297)) ([6fb0587](https://github.com/shaka-project/shaka-player/commit/6fb0587519a353b20d12ae275c0131b150951ad7))
+* **VTT:** fix setting textShadow when multiple CSS classes provided ([#6287](https://github.com/shaka-project/shaka-player/issues/6287)) ([911d464](https://github.com/shaka-project/shaka-player/commit/911d464f3ca7a466b95c48f577ed62f726b52069))
+
+## [4.7.10](https://github.com/shaka-project/shaka-player/compare/v4.7.9...v4.7.10) (2024-02-21)
+
+
+### Bug Fixes
+
+* **DASH:** Fix precision issue on some platforms ([#6258](https://github.com/shaka-project/shaka-player/issues/6258)) ([a2a56cf](https://github.com/shaka-project/shaka-player/commit/a2a56cf16da6636f6ef6fa8a6baf2d0916aa7ee6))
+* **DASH:** Use labels to stitch streams across periods ([#6121](https://github.com/shaka-project/shaka-player/issues/6121)) ([75c8dce](https://github.com/shaka-project/shaka-player/commit/75c8dce0f7d8e1fb8cf64ed947355c20185aae20))
+* do not remove sub-second amounts from source buffer ([08c92c5](https://github.com/shaka-project/shaka-player/commit/08c92c53b9964c31d6e358a02eba679081a37521)), closes [#6240](https://github.com/shaka-project/shaka-player/issues/6240)
+* don't double wrap URIs for HLS key requests ([#6246](https://github.com/shaka-project/shaka-player/issues/6246)) ([5c8bd2e](https://github.com/shaka-project/shaka-player/commit/5c8bd2e4141d5bea749e92fd45cf1ee84a96598c))
+* Fix detection of flac support on Safari ([#6250](https://github.com/shaka-project/shaka-player/issues/6250)) ([5b9c494](https://github.com/shaka-project/shaka-player/commit/5b9c4949e6f202da45c1b997de1ebe1697b9c329)), closes [#6249](https://github.com/shaka-project/shaka-player/issues/6249)
+
+
+### Performance Improvements
+
+* Optimize init segment reference comparison for common case ([#6014](https://github.com/shaka-project/shaka-player/issues/6014)) ([0ffb401](https://github.com/shaka-project/shaka-player/commit/0ffb401dae98f3a73d940227f28dc010092b54b5))
+
+## [4.7.9](https://github.com/shaka-project/shaka-player/compare/v4.7.8...v4.7.9) (2024-02-02)
+
+
+### Bug Fixes
+
+* **CMCD:** allow session id to be configured ([#6192](https://github.com/shaka-project/shaka-player/issues/6192)) ([2166cfa](https://github.com/shaka-project/shaka-player/commit/2166cfad86b1c332becc57a7276ceef5126374d7))
+* **DASH:** Update dash manifest when minimumUpdatePeriod = 0 ([#6187](https://github.com/shaka-project/shaka-player/issues/6187)) ([e28956e](https://github.com/shaka-project/shaka-player/commit/e28956e53b662bec93ffc1c9b72695b4e7f9aabc))
+* **Demo:** Fix MSS assets ([#6194](https://github.com/shaka-project/shaka-player/issues/6194)) ([a22967a](https://github.com/shaka-project/shaka-player/commit/a22967a0efd9e48a7bd4e920db7b097b8803b2bd))
+* Fix DRM workaround for Xbox with Dolby Vision boxes ([#6201](https://github.com/shaka-project/shaka-player/issues/6201)) ([77f252d](https://github.com/shaka-project/shaka-player/commit/77f252d25d98062f8292334d0dfb64eadb25d65f))
+* Fix gitpkg.now.sh dependencies ([#6211](https://github.com/shaka-project/shaka-player/issues/6211)) ([be1706f](https://github.com/shaka-project/shaka-player/commit/be1706f6b83858971a4d93fafcd99b62408b600b))
+* Prevent license requests for unplayable variants ([#6204](https://github.com/shaka-project/shaka-player/issues/6204)) ([f5a9ab1](https://github.com/shaka-project/shaka-player/commit/f5a9ab1a8fa4f8160a747c9c0c82e7ab1e912ca2))
+
+
+### Reverts
+
+* Add chapter titles and dividers on the seek bar ([#6208](https://github.com/shaka-project/shaka-player/issues/6208)) ([8c8ffd9](https://github.com/shaka-project/shaka-player/commit/8c8ffd9e988385d35dbbe8360d84bd846362076d))
+
 ## [4.7.8](https://github.com/shaka-project/shaka-player/compare/v4.7.7...v4.7.8) (2024-01-30)
 
 
